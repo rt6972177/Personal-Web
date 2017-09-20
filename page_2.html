@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>學雜費繳費系統</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-flex.min.css">
+	<link rel="stylesheet" href="css/jasny-bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="style_2.css">
+	<style type="text/css">
+		@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+	</style>
+	<link rel="stylesheet" href="css/treeview.css">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/tether.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jasny-bootstrap.min.js"></script>
+	<script src="main_2.js"></script>
+	<script>		
+$(function () {
+  $('.tree li:has(ul)').addClass('parent_li').find(' > span').attr('title', 'Collapse this branch');
+  $('.tree li.parent_li > span').on('click', function (e) {
+    var children = $(this).parent('li.parent_li').find(' > ul > li');
+    if (children.is(":visible")) {
+      children.hide('fast');
+      $(this).attr('title', 'Expand this branch').find(' > i').addClass('icon-plus-sign').removeClass('icon-minus-sign');
+    } else {
+      children.show('fast');
+      $(this).attr('title', 'Collapse this branch').find(' > i').addClass('icon-minus-sign').removeClass('icon-plus-sign');
+    }
+    e.stopPropagation();
+  });
+});
+		</script>
+	<script>		
+			$(document).ready(function() {
+				// 整份 HTML 文件載入後，執行此區塊程式
+			});
+
+		</script>
+</head>
+
+<body>
+
+	<div id="side-menu" class="navmenu navmenu-default navmenu-fixed-left offcanvas">
+		<div id="offcanvas">
+			<div class="tree well">
+				<ul class="pl-0">
+					<li>
+						<span>學雜費減免</span>
+						<ul>
+							<li>
+								<a href="#" onclick="form1()"><i class="fa fa-edit"></i>填寫基本資料</a><input type="checkbox" class="cbox cbox_1">
+								<br><i class="fa fa-print"></i>減免申請書
+							</li>
+							<li>族籍證明<input type="checkbox" class="cbox cbox_2"></li>
+							<li>到生輔組申請減免<input type="button" value="完成" onclick="tryExp()"></li>
+						</ul>
+					</li>
+					<br>
+					<li id="tree_2" style="display:none">
+						<span>就學貸款申請</span>
+						<ul>
+							<li>
+								<a href="#" onclick="form1()"><i class="fa fa-edit"></i>填寫基本資料</a><input type="checkbox" class="cbox cbox_3">
+								<br><i class="fa fa-print"></i>緩繳申請書
+							</li>
+							<li><a href="#" onclick="form2()">富邦銀行對保</a><input type="checkbox" class="cbox cbox_4">
+								<br><i class="fa fa-print"></i>學雜費繳費單
+							</li>
+							<li><a href="#" onclick="form3()">學雜費繳費單</a><input type="checkbox" class="cbox cbox_5">
+								<br><i class="fa fa-print"></i>減免後學雜費繳費單
+							</li>
+							<li>到生輔組申請就貸<input type="button" value="完成" onclick="tryExp2()"></li>
+						</ul>
+					</li>
+					<br>
+					<li id="tree_3" style="display:none">
+						<span>學雜費繳費</span>
+						<ul>
+							<li><a href="#" onclick="form3()">學雜繳費網站</a>
+								<br><i class="fa fa-print"></i>學雜費繳費單
+							</li>
+							<li>至便利商店或ATM繳清不可貸款部分的學費</li><input type="button" value="完成" onclick="finish()">
+						</ul>
+					</li>
+					<br>
+					<li>
+						<span>資料查詢/修改</span>
+						<ul>
+							<li><a href="#" onclick="form1()"><i class="fa fa-edit"></i>修改減免申請資料</a></li>
+							<li><a href="#" onclick="form1()"><i class="fa fa-edit"></i>修改就貸申請資料</a></li>
+						</ul>
+			</div>
+		</div>
+	</div>
+	<div class="navbar navbar-default navbar-fixed-top">
+		<button class="btn btn-primary" data-toggle="offcanvas" data-target="#side-menu" data-canvas="body">
+				<i class="fa fa-bars"></i>
+			</button>
+	</div>
+
+	<div class="container-fluid p-0">
+		<div class="p-2 m-2">
+			<iframe style="width:400px; height:300px" src="page_2-1.html"></iframe>
+		</div>
+	</div>
+
+</body>
+
+</html>

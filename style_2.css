@@ -1,0 +1,7 @@
+span,li,h3,p {
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+li input {
+    float: right;
+}

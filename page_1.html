@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>學雜費繳費系統</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-flex.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="style_1.css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!--<script src="main_1.js"></script>-->
+    <style type="text/css">
+        @import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row flex-items-md-center my-1">
+            <h3>申請學雜費減免或就學貸款嗎? 請閱讀說明後依身分別選擇。</h3>
+        </div>
+        <div class="row">
+            <div class="col-md-4 offset-md-1">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item"><a class="nav-link active">可申請學雜費減免身分別</a></li>
+                </ul>
+                <p class="p-1 bg-info">　· 身心障礙學生
+                    <br>　· 身心障礙人士子女
+                    <br>　· 中低/低收入戶
+                    <br>　· 特殊境遇家庭子女
+                    <br>　· 現役軍人子女
+                    <br>　· 原住民學生
+                    <br>　· 恤滿/內軍公教遺族
+                </p>
+                <div class="row flex-items-md-center flex-items-md-middle">
+                    <select class="m-1">
+                        <option>不申請學雜費減免</option>
+                        <option>身心障礙學生</option>
+                        <option>身心障礙人士子女</option>
+                        <option>中低/低收入戶</option>
+                        <option>特殊境遇家庭子女</option>
+                        <option>現役軍人子女</option>
+                        <option>原住民學生</option>
+                        <option>恤滿/內軍公教遺族</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#a">宿舍抽籤</a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#b">學士延畢</a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#c">出國交換</a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#d">軍公教子女</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div id="a" class="tab-pane active bg-info">
+                        <h5 class="pt-1 px-1">參加宿舍抽籤的學生的申貸方式</h5>
+                        <p class="p-1">(一)於抽籤結果確定後（學士班新生確定日為8/25），列印學雜費繳費單及住宿費繳費單去台北富邦辦對保，並續辦後續緩繳申請流程。
+                            <br><br>(二)抽籤結果公告後，若有抽到宿舍者，住宿費繳費單上的「宿費（可貸）」有金額可貸款；若排在候補或抽到太子學舍床位者，請於對保時告訴銀行要加貸校外住宿費。
+                            <br><br>(三)若學士班新生無法於新生入門書院之註冊日辦理完貸款程序者，可先辦理完其他註冊程序，於補辦就學貸款流程並繳清不可貸款費用，且全部註冊關卡均完成核章後後，再至註冊組領取學生證。
+                        </p>
+                    </div>
+                    <div id="b" class="tab-pane bg-info">
+                        <h5 class="pt-1 px-1">教育學程及學士班延畢生學分費申貸方式</h5>
+                        <p class="p-1">（一）因為學士班延畢生之學（分）費，以及修讀教育學程之教育學分費金額，取決於您的修課學分數。故需待選課結果確認後方能確定需繳金額，因此您的學雜費繳費單不會有學（分）費／教育學分費金額。
+                            <br><br>（二）如您欲辦理此兩項費用之貸款，請您先至教務處註冊組（學士班）初估學分費並填寫 《學生繳費單異動申請書》。
+                            <br><br>（三）再持前揭《學生繳費單異動申請書》至出納組更換新的學雜費繳費單。
+                            <br><br>（四）持新學雜費繳費單至台北富邦銀行對保，之後的流程比照一般大學生辦理，即可完成申貸程序。
+                            <br><br>（五）教務處在期末考前收到銀行撥款後，會比較延畢生的預估學分費與開學後的實際選修情形再作「多的退給延畢生，少的請延畢生補繳」等 多退少補處理。
+                        </p>
+                    </div>
+                    <div id="c" class="tab-pane bg-info">
+
+                        <h5 class="pt-1 px-1">出國交換的申貸方式</h5>
+                        <p class="p-1">（一）請確定要出國交換的同學先至教務處（大學生請洽註冊組，研究生請洽研教組）申請該學期的 《學雜費預繳單》。
+                            <br><br>（二）因同學出國交換通常早於就貸正式開放申請的時間，故所有提早辦理就貸的程序只能以人工處理，而且在8月8日之前僅能到台北富邦銀行消金中心就學貸款科(10419 臺北市中山區中山北路二段50號3樓)
+                            辦理對保；8月8日開始可在其他有提供對保服務的分行辦理對保。
+                            <br><br>（三）將銀行用印過的《學雜費預繳單》及撥款通知書「影本」交給生輔組就貸承辦人。
+                            <br><br>（四）將銀行的撥款通知書「正本」一份，繳交給本校國際事務處當作「繳費證明」並證明確實有辦就學貸款。
+                            <br><br>（五）同學出國前，請親朋好友在就貸正式開放申請期間，至學校系統列印「已扣除就貸金額」的學雜費繳費單，再把剩下不能貸款的金額（如網路使用費）繳清，即可完成申貸程序。
+                            <br><br>（六）前面所有步驟若同學人在國外交換不方便辦理（例如出國交換一年以上），均可授權他人代為辦理「每學期」的申貸。
+                        </p>
+                    </div>
+                    <div id="d" class="tab-pane bg-info">
+                        <h5 class="pt-1 px-1">軍公教子女教育補助費辦理方式</h5>
+                        <p class="p-1"> (一）同學至銀行辦理對保時，學雜費的貸款金額請預先 扣除子女教育補助費（一般為13,600元）。
+                            <br><br>（二）在緩繳申請書上 勾選有子女教育補助費，再回學校繳交資料由工作人員修改貸款學費（扣除教育補助費）後印出新的學雜費繳費單。
+                            <br><br>（三）新繳費單的金額只剩下網路費等不可貸的費用，以及「沒貸款的子女教育補助費（一般為13,600元）」部分。
+                            <br><br>（四）持新繳費單去繳清費用並取得收據，再以收據向父母親服務的軍公教機關申請子女教育補助費。
+                        </p>
+                    </div>
+                </div>
+                <div class="row flex-items-md-center flex-items-md-middle">
+                    <span>申請就貸請依身分別勾選(可複選):</span>
+                    <div style="border:1px solid gray" class="px-1 m-1">
+                        <input type="checkbox" class="cbox"><span>不申請就學貸款</span>
+                        <br><input type="checkbox" class="cboxOptional"><span>學士延畢</span>
+                        <input type="checkbox" class="cboxOptional"><span>宿舍抽籤</span>
+                        <br><input type="checkbox" class="cboxOptional"><span>出國交換</span>
+                        <input type="checkbox" class="cboxOptional"><span>軍公教子女</span>
+                    </div>
+                    <button class="btn btn-primary m-1" onclick="javascript:location.href='page_2.html'">送出</button>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
